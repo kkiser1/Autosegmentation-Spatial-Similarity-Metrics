@@ -13,7 +13,7 @@ Inspired by the APL, we present two related metrics which we call the correction
 
 ![](images/CPL.png)
 
-The APV is corrected segmentation volume that is not included in the automated segmentation volume. This is effectively the false negative volume.
+The APV is the corrected segmentation volume that is not included in the automated segmentation volume. Effectively this is the false negative volume.
 
 ![](images/APV.png)
 
