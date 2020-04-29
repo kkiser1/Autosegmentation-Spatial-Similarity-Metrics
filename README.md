@@ -11,9 +11,9 @@ Vaassen et al. demonstrated that the APL correlates better with the time require
 
 Inspired by the APL, we add code for two related metrics that we call the corrections path length (CPL) and the added path volume (APV). The corrections path length is like the APL but includes the surface area (in pixels) of subtractive corrections as well as additive ones.
 
-![](images/APV.png)
+![](images/CPL.png)
 
 The APV is corrected segmentation volume that is not included in the automated segmentation volume. This is effectively the false negative volume.
 
-![](images/CPL.png)
+![](images/APV.png)
 
