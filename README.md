@@ -1,4 +1,4 @@
-# Novel Autosegmentation Accuracy Metrics
+# Autosegmentation Accuracy Metrics
 __________________________________
 
 ### Python code to calculate the added path length, added path volume, and corrections path length between an automated segmentation and its corresponding expert-corrected segmentation. 
