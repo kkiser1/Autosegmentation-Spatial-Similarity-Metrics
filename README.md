@@ -9,7 +9,7 @@ The added path length (APL) is a novel metric introduced by Vaassen et al. (http
 
 Vaassen et al. demonstrated that the APL correlates better with the time required to correct a segmentation than do traditional, popular metrics such as the volumetric Dice similarity coefficient or the Hausdorff distance. As a measure of autosegmentation accuracy, the APL  captures the expected time-savings benefit of automated segmentation better than traditional metrics.
 
-Inspired by the APL, we present two related metrics which we call the corrections path length (CPL) and the added path volume (APV). The corrections path length is like the APL but includes the surface area (in pixels) of subtractive corrections as well as additive ones.
+Inspired by the APL, we also present code two related metrics which we call the corrections path length (CPL) and the added path volume (APV). The corrections path length is like the APL but includes the surface area (in pixels) of subtractive corrections as well as additive ones.
 
 ![](images/CPL.png)
 
