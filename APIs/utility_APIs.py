@@ -6,7 +6,7 @@ def loadNiftiReturnNumpy(filepath):
     filepath: path to nifti file
     '''
     niftiFile = ni_img.load_img(filepath)
-    niftiArr = niftiFile.get_data()
+    niftiArr = niftiFile.get_fdata()
     
     return niftiArr
 
