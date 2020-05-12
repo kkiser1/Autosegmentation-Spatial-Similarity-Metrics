@@ -9,9 +9,9 @@ of the original image, and each array element should be 0 if its corresponding i
 the segmentation or 1 if it is.
 """
 
-def addedPathVolume(auto, gt):
+def FalseNegativeVolume(auto, gt):
     '''
-    Returns the added path volume, in pixels
+    Returns the false negative volume, in pixels
     
     Steps:
     1. Find pixels where the mask is present in gt but not in auto (wherever gt is 1 but auto is 0)
@@ -19,13 +19,13 @@ def addedPathVolume(auto, gt):
     3. Compute # pixels
     '''
     
-    apv = (gt > auto).astype(int).sum()
-    return apv
+    fnv = (gt > auto).astype(int).sum()
+    return fnv
 
 
-def correctionsPathLength(auto, gt):
+def AddedPathLength(auto, gt):
     '''
-    Returns the corrections path length, in pixels
+    Returns the added path length, in pixels
     
     Steps:
     1. Find pixels at the edge of the mask for both auto and gt
@@ -42,14 +42,14 @@ def correctionsPathLength(auto, gt):
     edge_gt = util.getEdgeOfMask(gt)
     
     # Count # pixels on the edge of gt that are on not in the edge of auto
-    cpl = (edge_gt > edge_auto).astype(int).sum()
+    apl = (edge_gt > edge_auto).astype(int).sum()
     
-    return cpl 
+    return apl 
 
 
-def addedPathLength(auto, gt):
+def FalseNegativePathLength(auto, gt):
     '''
-    Returns the added path length, in pixels
+    Returns the false negative path length, in pixels
     
     Steps:
     1. Find pixels at the edge of the mask for gt
@@ -64,6 +64,6 @@ def addedPathLength(auto, gt):
     edge_gt = util.getEdgeOfMask(gt)
     
     # Count # pixels where the edges in grount truth == 1 and auto == 0
-    apl = (edge_gt > auto).astype(int).sum() 
+    fnpl = (edge_gt > auto).astype(int).sum() 
     
-    return apl
+    return fnpl
