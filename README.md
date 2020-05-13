@@ -3,7 +3,7 @@ __________________________________
 
 ### Python code to calculate the added path length, false negative path length, and false negative volume between an automated segmentation and its corresponding expert-corrected segmentation. 
 
-The added path length (APL) is a novel metric introduced by Vaassen et al. (https://doi.org/10.1016/j.phro.2019.12.001) and is conceptually the distance that an editor's cursor travels when making corrections to an automated segmentation. Numerically it is the number of pixels in the corrected segmentation surface that are not shared in the automated segmentation surface.
+The added path length (APL) is a novel metric [introduced by Vaassen et al.](https://doi.org/10.1016/j.phro.2019.12.001) and is conceptually the distance that an editor's cursor travels when making corrections to an automated segmentation. Numerically it is the number of pixels in the corrected segmentation surface that are not shared in the automated segmentation surface.
 
 ![](images/APL.png)
 
